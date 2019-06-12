@@ -31,6 +31,9 @@ var templateFuncs = template.FuncMap{
 	"url": func(s string) template.URL {
 		return template.URL(s)
 	},
+	"nl2br": func(s string) template.HTML {
+		return template.HTML(strings.Replace(s, "\n", "<br>", -1))
+	},
 }
 
 // TDLeftToRight is the text direction from left to right (default)
