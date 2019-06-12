@@ -3,6 +3,7 @@ package hermes
 import (
 	"bytes"
 	"html/template"
+	"strings"
 
 	"github.com/Masterminds/sprig"
 	"github.com/imdario/mergo"
